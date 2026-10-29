@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio :: Flexbox</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+<style>
+	h1 {
+		text-align: center;
+		font: 48pt/1.4em Oswald, serif;
+		font-weight: normal;
+	} form {
+		width: 500px;
+		height: 700px;
+		background: lightblue;
+		margin: 0 auto;
+		box-shadow: 2px 3px 6px lightblue;
+		font: 12pt/1.4em Lato;
+		padding: 24px;
+	}fieldset{
+		margin-top: 18px;
+	} input[type="text"], textarea {
+		width: 98%;
+		font: 12pt/1.4em Oswald;
+		margin-bottom: 6px;
+	} textarea {
+		height: 90px;
+	} input[type="submit"] {
+		width: 100px;
+		height: 40px;
+		background: lightpink;
+		border-radius: 6px;
+		border: 1px solid gray;
+		display: block;
+		margin: 0 auto;
+	} input[type="submit"]:hover {
+		background: lavender;
+	} select {
+		width: 50%;
+		font: 12pt/1.4em lato;
+		padding: 2px 4px;
+	}
+</style>
+</head>
+
+<body>
+	<h1>Contact Me</h1>
+	<form action="https://formsubmit.co/nanci@unlv.nevada.edu" method="post">
+		<label>First name</label><br/>
+		<input type="text" name="first-name" /><br/>
+		<label>Last name</label><br/>
+		<input type="text" name="last-name" /><br/>
+		<label>Email</label><br/>
+		<input type="text" name="email" /><br/>
+		
+		<fieldset>
+		<legend>Operating system</legend>
+		<input type="radio" name="os" /><label>Mac OS</label><br/>
+		<input type="radio" name="os" /><label>Windows</label><br/>
+		<input type="radio" name="os" /><label>UNIX </label><br/>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Services desire</legend>
+		<input type="checkbox"><label>Design</label><br/>
+		<input type="checkbox"><label>UX/UI</label><br/>
+		<input type="checkbox"><label>Consulting</label>
+		<br/>
+		</fieldset><br/>
+		
+	<label>What is your timeframe?</label><br/>
+	<select>
+		<option>ASAP</option>
+		<option>This week</option>
+		<option>This month</option>
+		<option>This year</option>
+		<option>Not sure</option>
+	</select>
+	<br/><br/>
+		
+		<label>Message</label><br/>
+		<textarea placeholder="Write message here."></textarea><br/>
+        
+	<input type="submit" value="Submit" />
+	</form>
+</body>
+</html>
